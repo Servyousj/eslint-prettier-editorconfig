@@ -1,0 +1,27 @@
+# 是否是顶级配置文件，设置为true的时候才会停止搜索.editorconfig文件
+root = true
+
+#  匹配除/之外的任意字符
+[*]
+# 换行符类型
+end_of_line = lf
+# 是否让文件以空行结束
+insert_final_newline = true
+
+[*.js]
+# 编码格式
+charset = utf-8
+# 缩进方式tab" | "space
+indent_style = space
+# 缩进大小
+indent_size = 2
+# 是否删除行尾空格
+trim_trailing_whitespace = true
+
+[*.md]
+# 是否删除行尾空格
+trim_trailing_whitespace = false
+
+[*.{json,yml}]
+indent_size = 2
+
